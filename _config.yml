@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Landed by HTML5UP
+title: Landed by HTML5UP for Jekyll
 copyright: Untitled
 email: franz@franzscholz.net
 description: >- # this means to ignore newlines until "baseurl:"
   A Jekyll template for the HTML5UP Landed design.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: franzscholz
 github_username:  franzscholz
 facebook_username: franzscholz

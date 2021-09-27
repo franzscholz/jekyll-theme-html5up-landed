@@ -1,0 +1,13 @@
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<section>
+   {% if post.teaser %}
+   <a href="{{ post.url | relative_url }}" class="image fit" rel="permalink"><img src="{{ post.teaser | relative_url }}" alt="{{ title }}"></a>
+   {% endif %}
+   <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+   {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+</section>

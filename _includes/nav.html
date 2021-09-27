@@ -1,5 +1,6 @@
 <nav id="nav">
     <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
         {% for page in site.pages %}
         {% if page.title %}
         <li><a href="{{ page.url }}">{{page.title}}</a></li>

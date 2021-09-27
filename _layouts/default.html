@@ -1,1 +1,21 @@
-{{ content }}
+
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+	{% include head.html %}
+	<body class="is-preload {{ page.class }}">
+		<div id="page-wrapper">
+			{% include header.html %}
+
+            {{ content }}
+
+            {% include footer.html %}
+		</div>
+
+		{% include scripts.html %}
+	</body>
+</html>
